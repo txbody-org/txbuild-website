@@ -18,12 +18,12 @@ export function Features() {
 
   return (
     <section className="w-full py-12">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 lg:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h1 className="text-5xl lg:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Powerful Features for Cardano Developers
           </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">
+          <p className="text-sm lg:text-lg text-gray-500 leading-relaxed">
             Transform your smart contracts into production-ready APIs in seconds
           </p>
         </div>
@@ -44,16 +44,21 @@ export function Features() {
               slidesToScroll: 1,
               dragFree: true,
             }}
+            className="w-full"
           >
-            <CarouselContent className="">
+            <CarouselContent className="-ml-0">
               {features.map((feature, index) => (
-                <CarouselItem key={index} className="pl-0 basis-1/4">
+                <CarouselItem
+                  key={index}
+                  className="pl-0 basis-full sm:basis-1/2 lg:basis-1/3 lg:basis-1/4"
+                >
                   <div className="h-full border border-border-color p-6 flex flex-col items-center text-center">
                     <Image
                       src={feature.img}
                       alt={feature.title}
                       width={100}
                       height={100}
+                      className="w-16 h-16 lg:w-20 lg:h-20"
                     />
 
                     <h3 className="text-lg font-semibold mb-3 leading-tight">
@@ -66,15 +71,14 @@ export function Features() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-0" />
-            <CarouselNext className="right-0" />
+            <CarouselPrevious className="left-0 flex" />
+            <CarouselNext className="right-0 flex" />
           </Carousel>
 
-          {/* Read more link */}
           <div className="flex justify-center mt-8">
             <Button
               variant="default"
-              className=" px-8 py-3 uppercase tracking-wider"
+              className="px-8 py-3 uppercase tracking-wider"
             >
               Read more
             </Button>

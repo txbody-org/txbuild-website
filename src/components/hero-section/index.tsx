@@ -4,21 +4,21 @@ export default function HeroSection() {
   return (
     <>
       <main className="relative overflow-hidden">
-        <div className="relative px-4 py-32">
+        <div className="relative px-4 py-12 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div className="space-y-4 lg:space-y-8">
               <div className="flex items-center space-x-4">
-                <div className="w-4 h-4 border border-logo-color transform rotate-45"></div>
+                <div className="w-3 h-3 lg:w-4 lg:h-4 border border-logo-color transform rotate-45"></div>
                 <span className="uppercase tracking-wider text-logo">
                   TxBuild CORE
                 </span>
               </div>
-              <h1 className="text-5xl lg:text-5xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 Instant Cardano APIs{" "}
                 <span className="block">from Plutus Blueprints</span>
               </h1>
 
-              <p className="text-lg text-gray-500 leading-relaxed max-w-lg">
+              <p className="text-sm lg:text-lg text-gray-500 leading-relaxed max-w-lg">
                 Upload your Plutus blueprint file and get automatically
                 generated APIs for querying datums, building unsigned
                 transactions, and syncing blockchain data. No manual

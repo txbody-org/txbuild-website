@@ -9,10 +9,10 @@ export function Footer() {
   return (
     <footer
       id="contact"
-      className="mt-12 bg-primary border-t border-primary px-4 py-4 text-sm text-text"
+      className="mt-6 lg:mt-12 bg-primary border-t border-primary px-4 py-2 lg:py-4 text-xs lg:text-sm text-text"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-center md:text-left">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 lg:gap-4">
+        <p className="text-center lg:text-left">
           Instant Cardano APIs from Plutus Blueprints
         </p>
         <div className="flex gap-4">
@@ -50,7 +50,7 @@ export function Footer() {
           </a>
         </div>
 
-        <p className="text-center md:text-right">
+        <p className="text-center lg:text-right">
           &copy; {new Date().getFullYear()} TxBuild. All rights reserved.
         </p>
       </div>

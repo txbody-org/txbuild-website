@@ -18,11 +18,12 @@ export default function ThemeToggle() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative z-40">
         <Button
           variant="outline"
+          size="icon"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="p-2 rounded-full bg-white dark:bg-gray-800 text-gray-800 dark:text-yellow-400 hover:scale-110 transition-transform fixed bottom-5 right-5"
+          className="p-2 rounded-full bg-white dark:bg-gray-800 text-gray-800 dark:text-yellow-400 hover:scale-110 transition-transform fixed bottom-2 right-2 lg:bottom-5 lg:right-5"
           aria-label="Toggle Dark Mode"
         >
           {theme === "dark" ? <SunIcon size={20} /> : <MoonIcon size={20} />}
